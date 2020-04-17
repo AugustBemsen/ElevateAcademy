@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate FX</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body onload="myFunction()">
+    <div id="load" style="display: none;"></div>
+        <svg id="loader" class="animate-bottom"  width="549" height="100" viewBox="0 0 549 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M56.8125 53.9941H13.6777V89.2676H63.7852V100H0.552734V0.46875H63.1016V11.2695H13.6777V43.2617H56.8125V53.9941Z" stroke="white" stroke-width="5"/>
+            <path d="M93.3164 89.2676H140.484V100H80.123V0.46875H93.3164V89.2676Z" stroke="white" stroke-width="5"/>
+            <path d="M211.715 53.9941H168.58V89.2676H218.688V100H155.455V0.46875H218.004V11.2695H168.58V43.2617H211.715V53.9941Z" stroke="white" stroke-width="5"/>
+            <path d="M267.975 82.5684L296.412 0.46875H310.768L273.854 100H262.232L225.387 0.46875H239.674L267.975 82.5684Z" stroke="white" stroke-width="5"/>
+            <path d="M373.932 74.0234H332.232L322.867 100H309.332L347.34 0.46875H358.824L396.9 100H383.434L373.932 74.0234ZM336.197 63.2227H370.035L353.082 16.6699L336.197 63.2227Z" stroke="white" stroke-width="5"/>
+            <path d="M470.182 11.2695H438.189V100H425.133V11.2695H393.209V0.46875H470.182V11.2695Z" stroke="white" stroke-width="5"/>
+            <path d="M541.207 53.9941H498.072V89.2676H548.18V100H484.947V0.46875H547.496V11.2695H498.072V43.2617H541.207V53.9941Z" stroke="white" stroke-width="5"/>
+        </svg>    
+    </div>
+    <script>
+
+        function myFunction() {
+            setTimeout(showPage, 4000);
+            // setTimeout(window.onload(window.location.assign('./indexx.html')), 9000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "block";
+            document.getElementById("load").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+
+

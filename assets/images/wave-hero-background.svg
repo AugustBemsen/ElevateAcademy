@@ -1,0 +1,20 @@
+<svg width="1300" height="499" viewBox="0 0 1300 499" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1300" height="499" fill="#E5E5E5"/>
+<g clip-path="url(#clip0)">
+<path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd" d="M0 0L1300 0C1299.84 99.0658 1299.84 259.046 1300 479.94C939.379 522.289 978.893 439.695 650 450.952C321.107 462.209 306.59 511.2 0 450.952C1 327.508 1 177.191 0 0Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1302 0H377.3H1.00073C1.00073 223.961 1.00073 366.85 1.00073 428.667C81.3955 416.745 155.187 399.335 344.719 416.745C534.251 434.155 601.176 503.79 876.679 437.775C1060.35 393.765 1202.12 397.003 1302 447.49V0Z" fill="url(#paint0_radial)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1753.14 -987.317) rotate(-44.6391) scale(911.959 519.403)">
+<stop stop-color="#8CCB02"/>
+<stop offset="0.029125" stop-color="#0269FD"/>
+<stop offset="0.0450534" stop-color="#0369FC"/>
+<stop offset="0.0600516" stop-color="#0468FB"/>
+<stop offset="0.254822" stop-color="#8CCB14"/>
+<stop offset="1" stop-color="#8CCB18"/>
+</radialGradient>
+<clipPath id="clip0">
+<rect width="1300" height="499" fill="white"/>
+</clipPath>
+</defs>
+</svg>
