@@ -3,7 +3,7 @@
 
 
 html {
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -304,7 +304,7 @@ html {
 }
 
 body {
-    font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     line-height: 1.42857;
     color: #838383;
@@ -503,7 +503,7 @@ h6 small {
 
 .h1,
 h1 {
-    font-size: 59px
+    font-size: 40px
 }
 
 .h2,
@@ -617,7 +617,7 @@ a.text-success:hover {
 
 a.text-info:focus,
 a.text-info:hover {
-    color: #245269
+    color: rgb(206, 245, 124)
 }
 
 .text-warning {
@@ -5069,7 +5069,8 @@ button.close {
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    height: auto;
 }
 
 .carousel-caption .btn {
@@ -5402,7 +5403,11 @@ button.close {
 }
 
 .list-unstyled li {
-    line-height: 1.58em
+    line-height: 1.58em;
+    padding-top: .3rem;
+}
+.list-unstyled li p {
+    padding-top: .6rem;
 }
 
 .section-container {
