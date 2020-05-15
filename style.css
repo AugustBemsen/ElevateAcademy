@@ -5411,11 +5411,11 @@ button.close {
 }
 
 .section-container {
-    padding: 60px 0
+    padding: 3.5rem 0
 }
 
 .section-container-spacer {
-    margin-bottom: 30px
+    margin-bottom: 1.5rem
 }
 
 .hero-full-container {
@@ -5527,12 +5527,12 @@ button.close {
     background-position: 0 90%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 30px
+    padding-bottom: 1.8rem;
 }
 
 @media (max-width:768px) {
     .navbar-default.active .navbar-nav {
-        margin-bottom: 60px
+        margin-bottom: 3.7rem
     }
 }
 
@@ -5673,7 +5673,7 @@ img.zoom-img {
 
 @media (max-width:992px) {
     .image-center {
-        margin: 20px auto
+        margin: 1.23rem auto
     }
 }
 
@@ -5859,6 +5859,22 @@ label {
     float: left;
     margin-right: 5px
 }
-
+@media (max-width: 767px) {
+    .footer-container {
+        padding: 3rem;
+    }
+    .hero-full-container {
+        padding: 15% 0;
+    }
+    h1, h2, h3, .h1, .h2, .h3 {
+        font-size: 1.5em;
+    }
+    .navbar-default.active {
+        padding-bottom: 1.5rem;
+    }
+    .logo-span {
+        font-size: 1.8rem;
+    }
+}
 
 /* Clients */
