@@ -346,7 +346,7 @@ img {
 
 .img-responsive {
     display: block;
-    max-width: 100%;
+    max-width: 75%;
     height: auto
 }
 
@@ -5874,6 +5874,9 @@ label {
     }
     .logo-span {
         font-size: 1.8rem;
+    }
+    .img-responsive {
+        max-width: 50%;
     }
 }
 
