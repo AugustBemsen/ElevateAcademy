@@ -8,7 +8,7 @@ const port = 3000;
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({
-  extended: true
+    extended: true
 }));
 app.use(express.static("public"));
 
@@ -20,19 +20,21 @@ app.post('/', (req, res) => {
     const email = req.body.email;
     const subject = req.body.subject;
     const message = req.body.message;
-    
-    const data = {
-        members : [{
-            email_address : email,
-            status: 'subscribed',
-            SUBJECT: subject,
-            MESSAGE: message
-        }]
-    }
 
-    const uid = process.env.UID;
+    const data = {
+        members: [{
+            email_address: email,
+            status: 'subscribed',
+            merge_fields: {
+                SUBJECT: subject,
+                MESSAGE: message
+            }
+        }],
+        notify_on_subscribe : 'elevateforex1@gmail.com'
+    }
     const suscribersData = JSON.stringify(data);
-    const url = 'https://us19.api.mailchimp.com/3.0/lists/' + uid;
+    const url = `https://us19.api.mailchimp.com/3.0/lists/${process.env.UID}`
+
     const options = {
         method: 'POST',
         auth: process.env.AUTH
@@ -40,21 +42,20 @@ app.post('/', (req, res) => {
     const request = https.request(url, options, (response) => {
         response.on("data", (data) => {
 
-            console.log(JSON.parse(data));
-            
-            if (response.statusCode === 200 ) {
-                 res.sendFile(__dirname + '/sucess.html');
+
+            if (response.statusCode === 200) {
+                res.sendFile(__dirname + '/sucess.html');
             } else {
                 res.sendFile(__dirname + '/fail.html');
             }
-            
+
         })
     })
     request.write(suscribersData);
     request.end();
 
 
-   
+
 
 });
 
@@ -71,5 +72,5 @@ app.get('/courses', (req, res) => {
 
 
 app.listen(port, () => {
-  console.log("Server started on port 3000");
+    console.log("Server started on port 3000");
 });
